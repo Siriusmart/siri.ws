@@ -54,7 +54,7 @@
 
 .desktop #topurls a:hover {
   color: #88e0f0;
-  filter: drop-shadow(5px 5px 7px #002233);
+  filter: drop-shadow(5px 5px 7px #002293);
   transition: 100ms;
 }
 
@@ -75,7 +75,7 @@
 }
 
 #socials a:hover {
-  filter: drop-shadow(5px 5px 7px #002233);
+  filter: drop-shadow(5px 5px 7px #002293);
 }
 
 #emailbelowsocials,
@@ -192,7 +192,7 @@
 }
 
 #credit {
-    margin-top: 100vh;
+  margin-top: 100vh;
   background: #1e2440;
   color: #a1a1c1;
   font-family: monospace, serif;
@@ -204,6 +204,11 @@
 
 #credit a {
   color: #a1a1c1;
+}
+
+#credit a:hover {
+  color: #f48ead;
+  filter: drop-shadow(5px 5px 7px #802233);
 }
 
 #credit span {
