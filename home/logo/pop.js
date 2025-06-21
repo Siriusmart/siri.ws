@@ -32,5 +32,17 @@ Array.from(document.querySelectorAll("#topurls a"))
     email.onclick = () => {
         let hoverSound = new Audio("/home/logo/tap.opus");
         hoverSound.play();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
     };
+});
+
+window.addEventListener("blur", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "instant",
+    });
 });
