@@ -46,8 +46,8 @@ fetch("/home/logo/pfp.svg").then((res) => {
                             circle.style.opacity = 1;
                             circle.style.filter = "url(#glow)";
                         },
-                        Math.pow(30, Math.random()) - 1 + 500,
-                    ) * 240;
+                        (Math.pow(15, Math.random()) - 1) * 240 + 240,
+                    );
                 },
                 (Math.pow(15, Math.random()) - 1) * 240,
             );

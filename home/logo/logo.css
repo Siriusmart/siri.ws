@@ -159,3 +159,31 @@
     display: none;
   }
 }
+
+.mobile #mute {
+  display: none;
+}
+
+.desktop #mute {
+  display: block;
+}
+
+#mutecontainer {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+#mute {
+  width: 40px;
+  transition: 200ms;
+  filter: brightness(0) saturate(100%) invert(42%) sepia(85%) saturate(929%)
+    hue-rotate(321deg) brightness(104%) contrast(87%);
+}
+
+#mute:hover {
+  transition: 200ms;
+  filter: brightness(0) saturate(100%) invert(83%) sepia(27%) saturate(490%)
+    hue-rotate(358deg) brightness(95%) contrast(93%);
+  cursor: pointer;
+}

@@ -3,6 +3,7 @@ if (!window.isMobile) {
     let topurls = document.getElementById("topurls");
     let socials = document.getElementById("socials");
     let emailbelow = document.getElementById("emailbelow");
+    let muteinner = document.getElementById("muteinner");
 
     let up = 0;
     let left = 0;
@@ -20,5 +21,6 @@ if (!window.isMobile) {
 
         emailbelow.style.transform = `translate(${left * 0.01}px,${up * 0.01}px)`;
         socials.style.transform = `translate(${left * 0.01}px,${up * 0.01}px)`;
+        muteinner.style.transform = `translate(${left * 0.01}px,${up * 0.01}px)`;
     };
 }
