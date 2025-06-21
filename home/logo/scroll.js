@@ -1,8 +1,11 @@
 {
     let previousStop = 0;
     let hasTimeOut = false;
-    window.onwheel = () => {
-        previousStop = Date.now();
+    let credit = document.getElementById("credit");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY != credit.scrollHeight) previousStop = Date.now();
+        else return;
 
         function scrollToTop() {
             if (Date.now() - previousStop > 1500) {
@@ -22,14 +25,12 @@
         }
 
         setTimeout(() => {
-            if (
-                window.scrollY == document.getElementById("credit").scrollHeight
-            ) {
+            if (window.scrollY == credit.scrollHeight) {
                 window.scrollTo({
                     top: window.scrollY - 10,
                     behavior: "smooth",
                 });
             }
         }, 200);
-    };
+    });
 }

@@ -30,7 +30,6 @@
   height: calc(100vh - 100px);
   width: calc(100vw - 100px);
   display: inline-block;
-  z-index: -100;
   position: relative;
 }
 
