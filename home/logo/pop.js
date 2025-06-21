@@ -3,6 +3,7 @@ new Audio("/home/logo/tap.opus");
 
 Array.from(document.querySelectorAll("#topurls a"))
     .concat(Array.from(document.querySelectorAll("#socials a")).slice(1))
+    .concat(Array.from(document.querySelectorAll("#credit a")))
     .forEach((url) => {
         if (url.id == "emailbelowsocials") return;
         if (!window.isMobile)
