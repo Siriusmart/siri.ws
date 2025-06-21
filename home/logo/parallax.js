@@ -7,7 +7,7 @@ if (!window.isMobile) {
 
     let up = 0;
     let left = 0;
-    document.getElementById("mainspacecontainerouter").onmousemove = function (
+    window.onmousemove = function (
         e,
     ) {
         up = window.innerHeight / 2 - e.clientY;

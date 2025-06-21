@@ -9,11 +9,12 @@
 }
 
 #mainspacecontainerouter {
-  position: absolute;
   background-color: #323455;
   width: 100vw;
   height: 100vh;
-  z-index: -500;
+  z-index: -250;
+  position: absolute;
+  transform: translateY(-100vh);
 }
 
 #mainspacecontainer {
@@ -166,6 +167,8 @@
 
 .desktop #mute {
   display: block;
+  opacity: 1;
+  transition: 200ms;
 }
 
 #mutecontainer {
@@ -175,6 +178,7 @@
 }
 
 #mute {
+  opacity: 0;
   width: 40px;
   transition: 200ms;
   filter: brightness(0) saturate(100%) invert(42%) sepia(85%) saturate(929%)
@@ -186,4 +190,24 @@
   filter: brightness(0) saturate(100%) invert(83%) sepia(27%) saturate(490%)
     hue-rotate(358deg) brightness(95%) contrast(93%);
   cursor: pointer;
+}
+
+#credit {
+    margin-top: 100vh;
+  background: #1e2440;
+  color: #a1a1c1;
+  font-family: monospace, serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+#credit a {
+  color: #a1a1c1;
+}
+
+#credit span {
+  display: block;
+  margin: 5px;
 }

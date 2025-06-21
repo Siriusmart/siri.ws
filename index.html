@@ -12,6 +12,11 @@
     />
     <link rel="shortcut icon" href="/pfp.png" type="image/x-icon" />
   </head>
+  <script>
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    };
+  </script>
   <body>
     <div id="mainspacecontainerouter">
       <div id="topurls">
@@ -66,9 +71,27 @@
       </div>
     </div>
 
+    <div id="credit">
+      <span id="inspiration">
+        Inspiration taken from
+        <a href="https://ppy.sh" target="_blank">ppy.sh</a> and
+        <a href="https://osu.ppy.sh" target="_blank">osu!</a>
+      </span>
+      <span
+        >Source code on
+        <a href="https://github.com/siriusmart/siri.ws" target="_blank"
+          >Git repository</a
+        ></span
+      >
+      <br />
+      <br />
+      <span id="author">Siriusmart @ 2025</span>
+    </div>
+
     <script src="/home/logo/mute.js"></script>
-    <script src="/home/logo/fadein.js"></script>
-    <script src="/home/logo/parallax.js"></script>
-    <script src="/home/logo/pop.js"></script>
+    <script src="/home/logo/fadein.js" defer></script>
+    <script src="/home/logo/parallax.js" defer></script>
+    <script src="/home/logo/pop.js" defer></script>
+    <script src="/home/logo/scroll.js" defer></script>
   </body>
 </html>
