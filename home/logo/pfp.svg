@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 1200 1200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 1200 1200" id="logo">
 <defs>
 <filter id="glow" filterUnits="userSpaceOnUse"
             x="-50%" y="-50%" width="200%" height="200%">

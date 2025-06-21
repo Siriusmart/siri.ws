@@ -8,18 +8,28 @@
   transform: translate(-50%, -50%);
 }
 
+#mainspacecontainerouter {
+  position: absolute;
+  background-color: #323455;
+  width: 100vw;
+  height: 100vh;
+  z-index: -500;
+}
+
 #mainspacecontainer {
   height: calc(100vh - 100px);
   width: calc(100vw - 100px);
   margin: 0;
-  background-color: #323455;
   padding: 50px;
+  z-index: -150;
+  position: absolute;
 }
 
 #mainspace {
   height: calc(100vh - 100px);
   width: calc(100vw - 100px);
   display: inline-block;
+  z-index: -100;
   position: relative;
 }
 
@@ -42,8 +52,110 @@
   transition: 100ms;
 }
 
-#topurls a:hover {
+.desktop #topurls a:hover {
   color: #88e0f0;
   filter: drop-shadow(5px 5px 7px #002233);
   transition: 100ms;
+}
+
+#socials img {
+  height: 30px;
+  padding-left: 16px;
+  filter: brightness(0) saturate(100%) invert(98%) sepia(12%) saturate(639%)
+    hue-rotate(176deg) brightness(99%) contrast(93%);
+  transition-property: filter;
+  transition-duration: 0.2s;
+}
+
+.desktop #socials img:hover {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(66%) saturate(336%)
+    hue-rotate(154deg) brightness(97%) contrast(94%);
+  transition-property: filter;
+  transition-duration: 0.2s;
+}
+
+#socials a:hover {
+  filter: drop-shadow(5px 5px 7px #002233);
+}
+
+#emailbelowsocials,
+#emailbelow {
+  text-decoration: none;
+  color: #eceff4;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 1.5em;
+  transition: 100ms color;
+  transition: 100ms drop-shadow;
+}
+
+#emailbelow {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  font-size: 30px;
+}
+
+#emailbelowcontainer {
+  position: absolute;
+}
+
+.desktop #emailbelowsocials:hover,
+.desktop #emailbelow:hover {
+  color: #88e0f0;
+  transition: 100ms;
+}
+
+@media (max-width: 1000px) {
+  #emailbelowsocials {
+    display: block;
+  }
+
+  #socialscontainer {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    transform: translateY(85vh);
+  }
+
+  #socials {
+    margin: auto;
+    width: max-content;
+  }
+
+  #emailbelow {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) and (max-height: 500px) {
+  #emailbelowsocials {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  #emailbelowsocials {
+    display: none;
+  }
+
+  #emailbelowcontainer {
+    width: 100vw;
+    transform: translateY(90vh);
+  }
+
+  #socialscontainer {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1000px) and (max-height: 500px) {
+  #emailbelow {
+    display: none;
+  }
 }
