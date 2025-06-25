@@ -74,7 +74,7 @@
   transition-duration: 0.2s;
 }
 
-#socials a:hover {
+.desktop #socials a:hover {
   filter: drop-shadow(5px 5px 7px #002293);
 }
 
@@ -184,7 +184,7 @@
     hue-rotate(321deg) brightness(104%) contrast(87%);
 }
 
-#mute:hover {
+.desktop #mute:hover {
   transition: 200ms;
   filter: brightness(0) saturate(100%) invert(83%) sepia(27%) saturate(490%)
     hue-rotate(358deg) brightness(95%) contrast(93%);
@@ -206,7 +206,7 @@
   color: #a1a1c1;
 }
 
-#credit a:hover {
+.desktop #credit a:hover {
   color: #f48ead;
   filter: drop-shadow(5px 5px 7px #802233);
 }

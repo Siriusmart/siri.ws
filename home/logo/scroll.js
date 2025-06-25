@@ -3,6 +3,15 @@
     let hasTimeOut = false;
     let credit = document.getElementById("credit");
 
+    function bumpPrevious() {
+        previousStop = Date.now();
+    }
+
+    window.addEventListener("touchstart", bumpPrevious);
+    window.addEventListener("touchmove", bumpPrevious);
+    window.addEventListener("keydown", bumpPrevious);
+    window.addEventListener("mousemove", bumpPrevious);
+
     window.addEventListener("scroll", () => {
         if (window.scrollY != credit.scrollHeight) previousStop = Date.now();
         else return;
