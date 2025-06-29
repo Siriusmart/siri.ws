@@ -58,16 +58,22 @@
   transition: 100ms;
 }
 
+#socials a:not(:last-child) {
+  width: min-content;
+  display: inline-block;
+  margin-left: 16px;
+}
+
 #socials img {
+    pointer-events: none;
   height: 30px;
-  padding-left: 16px;
   filter: brightness(0) saturate(100%) invert(98%) sepia(12%) saturate(639%)
     hue-rotate(176deg) brightness(99%) contrast(93%);
   transition-property: filter;
   transition-duration: 0.2s;
 }
 
-.desktop #socials img:hover {
+.desktop #socials a:hover img {
   filter: brightness(0) saturate(100%) invert(79%) sepia(66%) saturate(336%)
     hue-rotate(154deg) brightness(97%) contrast(94%);
   transition-property: filter;
